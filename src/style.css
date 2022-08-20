@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Lato', sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 250ms ease-in-out;
+}
+
+a:hover {
+  color: #4a74ff;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+header {
+  z-index: 10;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #fff;
+}
+
+header div {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+nav ul li {
+  padding: 5px 5px;
+  margin: 5px 10px;
+}
+
+section {
+  max-width: 100%;
+  min-height: 80vh;
+}
+
+.video-container {
+  height: 90vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.video-container video {
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.video-container .videoOverlayContent {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  z-index: 7;
+  width: 90%;
+  margin: auto;
+  background-color: transparent;
+}
+
+.videoOverlayContent div {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 1);
+  width: 30%;
+  transition: all 150ms ease-in-out;
+}
+
+.videoOverlayContent div a {
+  cursor: pointer;
+  letter-spacing: 3px;
+  font-weight: 600;
+  margin: 20px 0px;
+  padding: 10px;
+  background-color: black;
+  color: #fff;
+  font: inherit;
+  border: 2px solid black;
+  outline: none;
+  transition: all 200ms ease-in-out;
+}
+
+.videoOverlayContent div a:hover {
+  color: black;
+  background-color: white;
+}
+
+.videoOverlayContent div h1 {
+  font-size: 3rem;
+}
+
+.flexContainer {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.alignLeft {
+  align-items: flex-start;
+}
+
+.alignRight {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.columnFlex {
+  flex-direction: column;
+}
+
+section img {
+  flex: 1;
+}
+
+.mainContent {
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+
+.mainContent img {
+  object-position: center;
+  object-fit: cover;
+  margin: 0px 20px;
+  width: 400px;
+  height: 400px;
+  border-radius: 400px;
+  padding: 5px;
+  border: 5px solid rgba(71, 114, 255, 0.8);
+}
+
+.contentFlex {
+  padding: 20px 40px;
+  display: flex;
+  flex-flow: column;
+  max-width: 70ch;
+  text-align: justify;
+  line-height: 150%;
+  font-size: 1.2rem;
+}
+
+.textSection {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.textSection .sectionTitle {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.subSection {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  padding: 0px 20px;
+  padding-bottom: 20px;
+}
+
+.subText span {
+  margin: auto;
+  margin-top: 20px;
+  content: '';
+  display: block;
+  height: 2px;
+  width: 80%;
+  background-color: rgba(71, 114, 255, 0.3);
+}
+
+.subTitle {
+  align-self: flex-start;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  top: 110px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 0px 10px;
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  white-space: nowrap;
+
+  color: #4a74ff;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.subText {
+  text-align: justify;
+  padding: 0px 20px;
+  font-size: 1.2rem;
+  line-height: 200%;
+}
+
+iframe {
+  display: block;
+  margin: 40px auto;
+}
+
+.chirpButton {
+  font-weight: 500;
+  margin: 10px 0px;
+  color: #4a74ff;
+}
